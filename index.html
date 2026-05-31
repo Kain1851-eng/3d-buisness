@@ -584,28 +584,44 @@
       </div>
     </section>
 
-    <section id="contact">
-      <div class="section-title">Contact</div>
-      <div class="section-subtitle">Start a <span>print request</span></div>
-      <div class="contact-box">
-        <p>
-          To keep things safe and simple, all orders and questions go through an adult. Please contact Grandad with your idea,
-          photos, or measurements, and we’ll see what we can make.
-        </p>
-        <div class="contact-label">Email (example)</div>
-        <div class="contact-value">grandad@example.com</div>
-        <br />
-        <p>
-          In your message, include:
-        </p>
-        <ul style="list-style: none; padding-left: 0; font-size: 0.85rem; color: var(--muted);">
-          <li>• A short description of what you want</li>
-          <li>• Rough size (in cm)</li>
-          <li>• Colour preference (if any)</li>
-          <li>• A photo if it’s a replacement part</li>
-        </ul>
-      </div>
-    </section>
+<section id="contact">
+  <div class="section-title">Contact</div>
+  <div class="section-subtitle">Start a <span>print request</span></div>
+
+  <div class="contact-box">
+    <p>
+      To keep things safe and simple, all orders and questions go through an adult. 
+      Click the button below to reveal the contact email.
+    </p>
+
+    <div class="contact-label">Email</div>
+
+    <button 
+      class="btn btn-primary" 
+      onclick="document.getElementById('realEmail').style.display='block'; this.style.display='none';"
+    >
+      Show Email
+    </button>
+
+    <div 
+      id="realEmail" 
+      class="contact-value" 
+      style="display:none; margin-top:0.6rem;"
+    >
+      kainjohnianjones@gmail.com
+    </div>
+
+    <br />
+
+    <p>In your message, include:</p>
+    <ul style="list-style: none; padding-left: 0; font-size: 0.85rem; color: var(--muted);">
+      <li>• A short description of what you want</li>
+      <li>• Rough size (in cm)</li>
+      <li>• Colour preference (if any)</li>
+      <li>• A photo if it’s a replacement part</li>
+    </ul>
+  </div>
+</section>
   </main>
 
   <footer>
